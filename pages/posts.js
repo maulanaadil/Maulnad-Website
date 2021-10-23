@@ -1,17 +1,6 @@
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Text,
-  Divider,
-  Box,
-  Button,
-  Image
-} from '@chakra-ui/react'
+import { Container, Text, Divider, Box, Button, Image } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
 import NextLink from 'next/link'
-import { GridItem } from '../components/grid-item'
 import Typist from 'react-typist'
 
 const Posts = () => (
