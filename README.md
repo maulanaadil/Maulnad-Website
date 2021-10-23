@@ -12,4 +12,4 @@ Template By
 
 ## Design
 
-![HomePage](https://cdn.discordapp.com/attachments/723414734791245868/901429932884885534/unknown.png)
+![HomePage](https://cdn.discordapp.com/attachments/723414734791245868/901430656033247252/unknown.png)
