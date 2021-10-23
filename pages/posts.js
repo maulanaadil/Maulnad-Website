@@ -7,10 +7,11 @@ const Posts = () => (
   <Layout title="Posts">
     <Container align="center">
       <Image
+        borderRadius="20"
         src="/images/contents/empty.png"
         objectFit="cover"
         alt="Empty"
-        mt="100"
+        my="50"
         size="200px"
       />
       <Text fontSize="3xl" my="8" align="center">
