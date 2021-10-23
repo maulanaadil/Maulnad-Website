@@ -1,12 +1,7 @@
-# Takuya's Homepage
+# Maulana Adil Portofolio
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## Tutorial
-
-Watch how I built this website on YouTube:
-
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+Template By
+[Takuyama](https://twitter.com/inkdrop_app)
 
 ## Stack
 
@@ -15,22 +10,6 @@ Watch how I built this website on YouTube:
 - [Three.js](https://threejs.org/) - 3D library for JavaScript
 - [Framer Motion](https://www.framer.com/motion/) - An animation library for React
 
-## Project structure
+## Design
 
-```
-$PROJECT_ROOT
-│   # Page files
-├── pages
-│   # React component files
-├── components
-│   # Non-react modules
-├── lib
-│   # Static files for images and 3d model file
-└── public
-```
-
----
-
-Looking for a Markdown note-taking app? Check out my app called Inkdrop:
-
-[![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
+![HomePage](https://cdn.discordapp.com/attachments/723414734791245868/901429932884885534/unknown.png)
