@@ -1,47 +1,29 @@
-import { Container, Text, Divider, Box, Button, Image } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import NextLink from 'next/link'
-import Typist from 'react-typist'
+import Section from '../components/section'
+import { GridItem } from '../components/grid-item'
+
+import androidStudyJams from '../public/images/posts/post-1.jpg'
 
 const Posts = () => (
   <Layout title="Posts">
-    <Container align="center">
-      <Image
-        borderRadius="20"
-        src="/images/contents/empty.png"
-        objectFit="cover"
-        alt="Empty"
-        my="50"
-        size="200px"
-      />
-      <Text fontSize="3xl" my="8" align="center">
-        <Typist>No Post Avaible</Typist>
-      </Text>
+    <Container>
+      <Heading as="h3" fontSize={20} mb={4}>
+        Recently Posted
+      </Heading>
 
-      <Divider my={6} />
-
-      <Box my={6} align="center">
-        <NextLink href="/">
-          <Button colorScheme="teal">Return to home</Button>
-        </NextLink>
-      </Box>
-
-      {/* Contoh Menampilkan Data Post */}
-
-      {/* <Section delay={0.1}>
+      <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
-          />
-          <GridItem
-            title="My desk setup (Late 2020)"
-            thumbnail={thumbMyDeskSetup}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
-          />
+            title="Android Study Jams"
+            thumbnail={androidStudyJams}
+            href="https://www.youtube.com/watch?v=dhPDlxcKbeo"
+          >
+            Became a speaker and facilitator at the Android Study Jams event.
+            This event was delivered in Bahasa Indonesia 🇮🇩
+          </GridItem>
         </SimpleGrid>
-      </Section> */}
+      </Section>
     </Container>
   </Layout>
 )

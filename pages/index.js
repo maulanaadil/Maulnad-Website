@@ -19,6 +19,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import Typist from 'react-typist'
 import certificate1 from '../public/images/certificate1.jpg'
 import certificate2 from '../public/images/certificate2.jpg'
 
@@ -32,7 +33,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a front-end developer based in Bandung!
+        <Typist>Hello, I&apos;m a front-end developer based in Bandung!</Typist>
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -66,13 +67,13 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Adil is a developer and an Designer. He is a mobile developer at
-          Unikom Codelabs. He love to designing an app or website then
-          slicing/developing into an software. He is studies Information
-          Technology at Indonesia Computer University. During his studies, adil
-          also became Core Teams Google Developer Students and an part Members
-          Unikom Codelabs. Apart on that he is now an freelancer for designing
-          or building an apps.{'\n'}
+          Adil is a Developer and an Designer. He&apos;s a mobile developer at
+          Unikom Codelabs. He love to designing an app or website then slicing
+          or develope into an software. He&apos;s studies Information Technology
+          at Indonesia Computer University. During his studies, Adil also became
+          Core Teams Google Developer Students and an part Members Unikom
+          Codelabs. Apart on that he is now an freelancer for designing or
+          building an apps.{'\n'}
           <Link href="https://drive.google.com/file/d/1sNI4Y11EJh_0dspRlRaHIIsRSTCISYGG/view?usp=sharing">
             Curiculum Vitae
           </Link>
@@ -107,7 +108,7 @@ const Home = () => (
         </SimpleGrid>
         <SimpleGrid row={2}>
           <BioYear>2021 -present</BioYear>
-          <BioDesc>An Mobile Developer at Unikom Codelabs.</BioDesc>
+          <BioDesc>An Front-End Developer at Unikom Codelabs.</BioDesc>
         </SimpleGrid>
       </Section>
 

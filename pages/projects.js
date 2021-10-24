@@ -4,6 +4,11 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import staycation from '../public/images/projects/project-1.png'
+import staycationAdmin from '../public/images/projects/project-2.png'
+import movieApp from '../public/images/projects/project-3.png'
+import infoPDAM from '../public/images/projects/campus-project-1.png'
+import kopiHub from '../public/images/projects/campus-project-2.png'
+import lovcat from '../public/images/projects/collaboration-project-1.png'
 
 const Projects = () => (
   <Layout title="Projects">
@@ -16,11 +21,31 @@ const Projects = () => (
         <Section>
           <WorkGridItem
             id="staycation"
-            title="staycation"
+            title="Staycation"
             thumbnail={staycation}
           >
-            This project is a product hotel base on client who design and
-            develop by Maulana Adil.
+            This project is a front-end product hotel, who design and develop by
+            Maulana Adil.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="staycationAdmin"
+            title="Staycation (Admin)"
+            thumbnail={staycationAdmin}
+          >
+            This project is a back-end product hotel with Express and mongoDB
+            for Database.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="moviecatalogue"
+            title="Movie Catalogue"
+            thumbnail={movieApp}
+          >
+            this application helps you find and add the movie you are looking
+            for.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -33,13 +58,9 @@ const Projects = () => (
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem
-              id="staycation"
-              title="staycation"
-              thumbnail={staycation}
-            >
-              This project is a product hotel base on client who design and
-              develop by Maulana Adil.
+            <WorkGridItem id="lovcat" title="Lov Cat" thumbnail={lovcat}>
+              an Website to help your cat to find adopter and provide the latest
+              news about cats that are around you.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -55,12 +76,17 @@ const Projects = () => (
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="staycation"
-              title="staycation"
-              thumbnail={staycation}
+              id="indam"
+              title="INDAM (Info PDAM)"
+              thumbnail={infoPDAM}
             >
-              This project is a product hotel base on client who design and
-              develop by Maulana Adil.
+              This Website Will Help you to ge information about customers of
+              PDAM Sumedang.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem id="kopihub" title="Kopi Hub" thumbnail={kopiHub}>
+              Website to manage the system of the coffee shop
             </WorkGridItem>
           </Section>
         </SimpleGrid>
