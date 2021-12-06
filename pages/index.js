@@ -18,7 +18,12 @@ import { BioDesc, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoDribbble
+} from 'react-icons/io5'
 
 import Typist from 'react-typist'
 import certificate1 from '../public/images/certificate1.jpg'
@@ -33,8 +38,12 @@ const Home = () => (
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        marginTop={10}
+        marginBottom={10}
       >
-        <Typist>Hello, I&apos;m a front-end developer based in Bandung!</Typist>
+        <Typist>
+          Hi Folks!👋, I&apos;m a front-end developer based in Bandung!
+        </Typist>
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -173,6 +182,17 @@ const Home = () => (
                 leftIcon={<Icon as={IoLogoLinkedin} />}
               >
                 @maulanaadil
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://dribbble.com/maulanaadill" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoDribbble} />}
+              >
+                @maulnad
               </Button>
             </Link>
           </ListItem>

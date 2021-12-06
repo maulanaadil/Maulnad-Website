@@ -18,7 +18,11 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Maulnad homepage" />
         <meta name="author" content="Maulana Adil" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="images/animoji.png"
+          type="image/x-icon"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Maulnad Homepage" />
         <meta property="og:type" content="website" />
