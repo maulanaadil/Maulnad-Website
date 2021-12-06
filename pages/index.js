@@ -19,6 +19,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+
 import Typist from 'react-typist'
 import certificate1 from '../public/images/certificate1.jpg'
 import certificate2 from '../public/images/certificate2.jpg'

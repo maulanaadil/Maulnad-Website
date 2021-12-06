@@ -27,8 +27,9 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="#">
-            - <ExternalLinkIcon mx="2px" />
+          <Link href="https://lov-cat-vercel.vercel.app/">
+            LovCat
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
