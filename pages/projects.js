@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import staycation from '../public/images/projects/project-1.png'
 import staycationAdmin from '../public/images/projects/project-2.png'
 import movieApp from '../public/images/projects/project-3.png'
+import virtue from '../public/images/projects/project-4.png'
 import infoPDAM from '../public/images/projects/campus-project-1.png'
 import kopiHub from '../public/images/projects/campus-project-2.png'
 import lovcat from '../public/images/projects/collaboration-project-1.png'
@@ -46,6 +47,11 @@ const Projects = () => (
           >
             this application helps you find and add the movie you are looking
             for.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem id="virtue" title="Virtue Pictures" thumbnail={virtue}>
+            building a company profile for virtue pictures company.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
