@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Box align="center" opacity={0.4} fontSize="sm">
       &copy; {new Date().getFullYear()} Build by{' '}
-      <Link href="http://instagram/maulanaadill">Maulnad</Link>.✌️
+      <Link href="https://www.instagram.com/maulanaadill/">Maulnad</Link>.✌️
     </Box>
   )
 }
