@@ -96,10 +96,7 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading variant="section-title">Experience</Heading>
-        <Box w="80px">
-          <Divider orientation="horizontal" my={4} />
-        </Box>
-        <SimpleGrid row={2}>
+        <SimpleGrid row={2} pt={3}>
           <BioYear>2019 - present</BioYear>
           <BioDesc color="gray.400" my={1}>
             Studies in college the Bachelor Program in the Graduate School of
