@@ -15,9 +15,9 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Maulnad homepage" />
+        <meta name="description" content="Maulnad Portofolio Website" />
         <meta name="author" content="Maulana Adil" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="images/animoji.png" />
         <link
           rel="shortcut icon"
           href="images/animoji.png"
@@ -26,7 +26,7 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Maulnad Homepage" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/images/animoji.png" />
+        <meta property="og:image" content="images/animoji.png" />
         <title>Homepage</title>
       </Head>
 
