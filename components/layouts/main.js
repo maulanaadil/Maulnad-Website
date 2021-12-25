@@ -23,10 +23,6 @@ const Main = ({ children, router }) => {
           href="images/animoji.png"
           type="image/x-icon"
         />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:site_name" content="Maulnad Homepage" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="images/animoji.png" />
         <title>Homepage</title>
       </Head>
 
