@@ -1,18 +1,17 @@
-import NextLink from 'next/link'
 import {
   Link,
   Container,
   Heading,
   Box,
-  Image,
+  Text,
   SimpleGrid,
   Button,
   List,
   ListItem,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  Divider
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioDesc, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -25,7 +24,7 @@ import {
   IoLogoDribbble
 } from 'react-icons/io5'
 
-import Typist from 'react-typist'
+import Typist from 'react-text-typist'
 import certificate1 from '../public/images/certificate1.jpg'
 import certificate2 from '../public/images/certificate2.jpg'
 
@@ -37,88 +36,88 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('#F7F7F7', 'whiteAlpha.200')}
         marginTop={10}
         marginBottom={10}
       >
-        <Typist>
-          Hi Folks!👋, I&apos;m a front-end developer based in Bandung!
-        </Typist>
+        Hi Folks!👋,{' '}
+        <Typist
+          sentences={[
+            `I'm a Front-End Developer`,
+            `I'm a UI/UX Enthusiast`,
+            'Nice to meet ya!'
+          ]}
+          cursorSmooth={true}
+          loop={false}
+        ></Typist>
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading fontSize="24px" variant="page-title">
             Maulana Adil
           </Heading>
-          <p>Undergraduate ( Developer / Designer )</p>
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
-          <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/adil.jpg"
-            alt="Profile image"
-          />
+          <Text fontSize="15px" color="gray.400" my={2}>
+            Undergraduate ( Developer / Designer )
+          </Text>
         </Box>
       </Box>
 
       <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          About
-        </Heading>
+        <Box w="50px">
+          <Divider orientation="horizontal" my={4} />
+        </Box>
         <Paragraph>
-          Adil is a Developer and an Designer. He&apos;s a mobile developer at
-          Unikom Codelabs. He love to designing an app or website then slicing
-          or develope into an software. He&apos;s studies Information Technology
-          at Indonesia Computer University. During his studies, Adil also became
-          Core Teams Google Developer Students and an part Members Unikom
-          Codelabs. Apart on that he is now an freelancer for designing or
-          building an apps.{'\n'}
-          <Link href="https://drive.google.com/file/d/1sNI4Y11EJh_0dspRlRaHIIsRSTCISYGG/view?usp=sharing">
+          He&apos;s a Developer and an Designer. He love to designing an app or
+          website then slicing or develope into an software. He&apos;s studies
+          Information Technology at{' '}
+          <Link href="https://www.unikom.ac.id/">
+            Indonesia Computer University.
+          </Link>{' '}
+          During his studies, Adil also became Core Teams{' '}
+          <Link href="https://developers.google.com/community/gdsc">
+            Google Developer Students
+          </Link>{' '}
+          and an part Members&nbsp;
+          <Link href="https://codelabs.unikom.ac.id/">
+            Unikom Codelabs.
+          </Link>{' '}
+          Apart on that he is now an freelancer for designing or building an
+          apps.{'\n'}
+          <Link
+            href="https://drive.google.com/file/d/1sNI4Y11EJh_0dspRlRaHIIsRSTCISYGG/view?usp=sharing"
+            variant="see-credentials"
+          >
             Curiculum Vitae
           </Link>
           .
         </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/projects">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              See Projects
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Experience
-        </Heading>
+        <Heading variant="section-title">Experience</Heading>
+        <Box w="80px">
+          <Divider orientation="horizontal" my={4} />
+        </Box>
         <SimpleGrid row={2}>
-          <BioYear>2019 -present</BioYear>
-          <BioDesc>
+          <BioYear>2019 - present</BioYear>
+          <BioDesc color="gray.400" my={1}>
             Studies in college the Bachelor Program in the Graduate School of
             Information Science at Indonesia Computer University
           </BioDesc>
         </SimpleGrid>
         <SimpleGrid row={2}>
-          <BioYear>2021 -present</BioYear>
-          <BioDesc>
+          <BioYear>2021 - present</BioYear>
+          <BioDesc color="gray.400" my={1}>
             Became co head-of tech on Google Developer Student Clubs at
             Indonesia Computer University.
           </BioDesc>
         </SimpleGrid>
         <SimpleGrid row={2}>
-          <BioYear>2021 -present</BioYear>
-          <BioDesc>An Front-End Developer at Unikom Codelabs.</BioDesc>
+          <BioYear>2021 - present</BioYear>
+          <BioDesc color="gray.400" my={1}>
+            An Front-End Developer at Unikom Codelabs.
+          </BioDesc>
         </SimpleGrid>
       </Section>
 
@@ -126,20 +125,20 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Certificates
         </Heading>
-        <SimpleGrid columns={[1, 2, 2]} gap={5}>
+        <SimpleGrid columns={[1, 2, 2]} gap={5} py={5}>
           <GridItem
             href="https://www.dicoding.com/certificates/53XEE8G1YXRN"
             title="Belajar Android Jetpack Pro"
             thumbnail={certificate1}
           >
-            <Link>See Credentials</Link>
+            <Link variant="see-credentials">See Credentials</Link>
           </GridItem>
           <GridItem
             href="#"
             title="Full Stack Javascript Developer"
             thumbnail={certificate2}
           >
-            <Link>See Credentials</Link>
+            <Link variant="see-credentials">See Credentials</Link>
           </GridItem>
         </SimpleGrid>
       </Section>
@@ -148,7 +147,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Get in touch
         </Heading>
-        <List>
+        <List py={5}>
           <ListItem>
             <Link href="https://github.com/maulanaadil" target="_blank">
               <Button
