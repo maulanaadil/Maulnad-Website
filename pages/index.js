@@ -68,7 +68,7 @@ const Home = () => (
           <Divider orientation="horizontal" my={4} />
         </Box>
         <Paragraph>
-          He&apos;s a Developer and an Designer. He love to designing an app or
+          He&apos;s a Developer and a Designer. He loves to designing an app or
           website then slicing or develope into an software. He&apos;s studies
           Information Technology at{' '}
           <Link href="https://www.unikom.ac.id/">
@@ -78,7 +78,7 @@ const Home = () => (
           <Link href="https://developers.google.com/community/gdsc">
             Google Developer Students
           </Link>{' '}
-          and an part Members&nbsp;
+          and an part members&nbsp;
           <Link href="https://codelabs.unikom.ac.id/">
             Unikom Codelabs.
           </Link>{' '}

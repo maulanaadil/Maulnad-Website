@@ -1,6 +1,6 @@
 import { Center, Container } from '@chakra-ui/layout'
 import Layout from '../../components/layouts/article'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import Paragraph from '../../components/paragraph'
 import { Badge, ListItem, List, Link, Image } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -19,10 +19,9 @@ const Work = () => (
         />
       </Center>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        An application that recommends and informs movies that are currently
+        showing, and there is a feature to save information about the movies you
+        like.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
@@ -40,9 +39,6 @@ const Work = () => (
           <span>Kotlin, Retrofit, Mockito, MVVM</span>
         </ListItem>
       </List>
-
-      <WorkImage src="/images/projects/project-3(1).png" alt="Moviecatalogue" />
-      <WorkImage src="/images/projects/project-3(2).png" alt="Moviecatalogue" />
     </Container>
   </Layout>
 )

@@ -2,7 +2,7 @@ import { Badge, Image, ListItem, List, Link } from '@chakra-ui/react'
 import { Container, Center } from '@chakra-ui/layout'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Layout from '../../components/layouts/article'
-import { Title, Meta, WorkImage } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import Paragraph from '../../components/paragraph'
 
 const Work = () => (
@@ -19,10 +19,9 @@ const Work = () => (
         />
       </Center>
       <Paragraph>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        A Content Management System <i>(CMS)</i> application for managing
+        staycation applications and includes a RESTFUL API <i>(Backend)</i>{' '}
+        using a MongoDB database
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
@@ -41,15 +40,6 @@ const Work = () => (
           <span>NodeJS, Express, Mongoose, EJS</span>
         </ListItem>
       </List>
-
-      <WorkImage
-        src="/images/projects/staycation-admin-1"
-        alt="Staycation Admin"
-      />
-      <WorkImage
-        src="/images/projects/staycation-admin-2"
-        alt="Staycation Admin"
-      />
     </Container>
   </Layout>
 )
