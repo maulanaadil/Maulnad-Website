@@ -9,6 +9,7 @@ import movieApp from '../public/images/projects/project-3.png'
 import virtue from '../public/images/projects/project-4.png'
 import infoPDAM from '../public/images/projects/campus-project-1.png'
 import kopiHub from '../public/images/projects/campus-project-2.png'
+import SystemInventory from '../public/images/projects/campus-project-3.png'
 import lovcat from '../public/images/projects/collaboration-project-1.png'
 
 const Projects = () => (
@@ -93,6 +94,15 @@ const Projects = () => (
           <Section>
             <WorkGridItem id="kopihub" title="Kopi Hub" thumbnail={kopiHub}>
               Website to manage the system of the coffee shop
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="system-inventory"
+              title="system-inventory"
+              thumbnail={SystemInventory}
+            >
+              Website to manage inventory system at SMPN 1 Tasikmalaya
             </WorkGridItem>
           </Section>
         </SimpleGrid>
