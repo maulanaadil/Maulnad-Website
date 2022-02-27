@@ -97,10 +97,10 @@ const Home = () => (
       <Section delay={0.2}>
         <Heading variant="section-title">Experience</Heading>
         <SimpleGrid row={2} pt={3}>
-          <BioYear>2019 - present</BioYear>
+          <BioYear>2022 - present</BioYear>
           <BioDesc color="gray.400" my={1}>
-            Studies in college the Bachelor Program in the Graduate School of
-            Information Science at Indonesia Computer University
+            Studies at Indonesia Computer University{' '}
+            <Text as="i">(Undergraduate)</Text>
           </BioDesc>
         </SimpleGrid>
         <SimpleGrid row={2}>
@@ -114,6 +114,13 @@ const Home = () => (
           <BioYear>2021 - present</BioYear>
           <BioDesc color="gray.400" my={1}>
             An Front-End Developer at Unikom Codelabs.
+          </BioDesc>
+        </SimpleGrid>
+        <SimpleGrid row={2}>
+          <BioYear>2022 - present</BioYear>
+          <BioDesc color="gray.400" my={1}>
+            An Front-End Engineer Intern at{' '}
+            <Link href="https://www.vidio.com/">Vidio.com</Link>.
           </BioDesc>
         </SimpleGrid>
       </Section>

@@ -7,6 +7,7 @@ import staycation from '../public/images/projects/project-1.png'
 import staycationAdmin from '../public/images/projects/project-2.png'
 import movieApp from '../public/images/projects/project-3.png'
 import virtue from '../public/images/projects/project-4.png'
+import EvocativeClub from '../public/images/projects/project-5.png'
 import infoPDAM from '../public/images/projects/campus-project-1.png'
 import kopiHub from '../public/images/projects/campus-project-2.png'
 import SystemInventory from '../public/images/projects/campus-project-3.png'
@@ -20,6 +21,16 @@ const Projects = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="evocative"
+            title="Evocative Club"
+            thumbnail={EvocativeClub}
+          >
+            Evocative is a streetwear brand that introduces various cultures
+            from around the globe through our products.
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="staycation"
@@ -99,7 +110,7 @@ const Projects = () => (
           <Section>
             <WorkGridItem
               id="system-inventory"
-              title="system-inventory"
+              title="Sytem Inventory"
               thumbnail={SystemInventory}
             >
               Website to manage inventory system at SMPN 1 Tasikmalaya

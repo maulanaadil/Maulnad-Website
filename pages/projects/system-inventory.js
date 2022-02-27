@@ -3,7 +3,7 @@ import { Badge } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 import { Title, WorkImage, Meta } from '../../components/work'
-import { Image, List, ListItem, Link } from '@chakra-ui/react'
+import { Image, List, ListItem, Link, Text } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Work = () => (
@@ -24,12 +24,22 @@ const Work = () => (
         industry. Lorem Ipsum has been the industry&apos;s standard dummy text
         ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book.
+        {'\n'}
       </Paragraph>
+      <Text as="i">
+        Username: <Text as="mark">admin</Text>
+      </Text>
+      <br />
+      <Text as="i">
+        Password: <Text as="mark">admin</Text>
+      </Text>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href={''}>-</Link>
+          <Link href={'https://imk.rifkikautsar.my.id/'}>
+            https://imk.rifkikautsar.my.id/
+          </Link>
           <ExternalLinkIcon mx={4} />
         </ListItem>
         <ListItem>
