@@ -85,7 +85,7 @@ const Home = () => (
           Apart on that he is now an freelancer for designing or building an
           apps.{'\n'}
           <Link
-            href="https://drive.google.com/file/d/1sNI4Y11EJh_0dspRlRaHIIsRSTCISYGG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1klWT2Hf-lhr4Y0JgfuuGUxiRKOu2XS3D/view?usp=sharing"
             variant="see-credentials"
           >
             Curiculum Vitae
