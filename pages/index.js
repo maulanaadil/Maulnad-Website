@@ -25,7 +25,7 @@ import {
 } from 'react-icons/io5'
 
 import Typist from 'react-text-typist'
-import certificate1 from '../public/images/certificate1.jpg'
+import certificate from '../public/images/certificate.jpg'
 import certificate2 from '../public/images/certificate2.jpg'
 
 const Home = () => (
@@ -131,9 +131,9 @@ const Home = () => (
         </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={5} py={5}>
           <GridItem
-            href="https://www.dicoding.com/certificates/53XEE8G1YXRN"
-            title="Belajar Android Jetpack Pro"
-            thumbnail={certificate1}
+            href="#"
+            title="Complete React Developer"
+            thumbnail={certificate}
           >
             <Link variant="see-credentials">See Credentials</Link>
           </GridItem>
